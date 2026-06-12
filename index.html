@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto CSS Interativo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Unidades de Medida & Propriedades CSS</h1>
+    <button id="toggle-theme">🌙 Modo Escuro</button>
+    <button id="reset-all">🔄 Resetar Tudo</button>
+  </header>
+
+  <main>
+    <!-- Unidades -->
+    <section class="unidades">
+      <h2>Unidades de Medida</h2>
+      <div class="control"><label for="pxRange">PX:</label><input type="range" id="pxRange" min="50" max="300" value="100"><div class="box px">100px</div></div>
+      <div class="control"><label for="emRange">EM:</label><input type="range" id="emRange" min="1" max="20" value="10"><div class="box em">10em</div></div>
+      <div class="control"><label for="remRange">REM:</label><input type="range" id="remRange" min="1" max="20" value="10"><div class="box rem">10rem</div></div>
+      <div class="control"><label for="percentRange">%</label><input type="range" id="percentRange" min="10" max="100" value="20"><div class="box percent">20%</div></div>
+      <div class="control"><label for="vwRange">VW:</label><input type="range" id="vwRange" min="5" max="100" value="20"><div class="box vw">20vw</div></div>
+      <div class="control"><label for="vhRange">VH:</label><input type="range" id="vhRange" min="5" max="100" value="20"><div class="box vh">20vh</div></div>
+      <div class="control"><label for="chRange">CH:</label><input type="range" id="chRange" min="5" max="30" value="10"><div class="box ch">10ch</div></div>
+      <div class="control"><label for="exRange">EX:</label><input type="range" id="exRange" min="5" max="30" value="10"><div class="box ex">10ex</div></div>
+      <div class="control"><label for="vminRange">VMIN:</label><input type="range" id="vminRange" min="5" max="100" value="20"><div class="box vmin">20vmin</div></div>
+      <div class="control"><label for="vmaxRange">VMAX:</label><input type="range" id="vmaxRange" min="5" max="100" value="20"><div class="box vmax">20vmax</div></div>
+    </section>
+
+    <!-- Propriedades -->
+    <section class="propriedades">
+      <h2>Propriedades CSS</h2>
+      <div class="control"><label for="paddingRange">Padding:</label><input type="range" id="paddingRange" min="0" max="50" value="10"><div class="box prop padding">Padding: 10px</div></div>
+      <div class="control"><label for="marginRange">Margin:</label><input type="range" id="marginRange" min="0" max="50" value="10"><div class="box prop margin">Margin: 10px</div></div>
+      <div class="control"><label for="radiusRange">Border-Radius:</label><input type="range" id="radiusRange" min="0" max="50" value="10"><div class="box prop radius">Radius: 10px</div></div>
+      <div class="control"><label for="gapRange">Gap:</label><input type="range" id="gapRange" min="0" max="50" value="10"><div class="container gap"><div class="box">A</div><div class="box">B</div></div></div>
+    </section>
+
+    <!-- Cores -->
+    <section class="cores">
+      <h2>Cores</h2>
+      <label for="colorPicker">Escolha uma cor:</label>
+      <input type="color" id="colorPicker" value="#ff5733">
+      <div class="color-box">#ff5733</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto responsivo interativo estilo Figma</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
